@@ -1,21 +1,77 @@
 @media (min-width: 1080px) {
 }
 
-* {
-	padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+
+
+.navbar{
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    padding-left: 10px;
+    padding-right: 35px;
+    background-color: aqua;
+    
+    
+
 }
 
-.wrapper{
-height: 100vh;
-border: 7px solid greenyellow;
-display: grid;
-
+.logo{
+     display: grid;
+     justify-content: start;
+}
+.logo img{
+    display: grid;
+    width: 50px;
+    height: 50px;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+    
+}
+.links{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-size: 20px;
+    
 }
 
-.side {
-background-color: blanchedalmond;
-border: 3px solid red;
-padding: 20px;
+.grid_container{
+    
+    overflow: hidden;
+
+    display: grid;
+    background-color:deepskyblue;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 470px 450px;
+    grid-gap: 3px;
+    
+}
+
+.banner{
+    background-color: blue;
+    grid-column: 1/-1;
+}
+.about{
+    background-color: brown;
+    grid-column: 1/-1;
+
+    
+}
+.picture{
+    background-color: blueviolet;
+    grid-column: 6/-1;
+
+}
+.trailer{
+    background-color: chartreuse;
+    grid-column: 1/-1;
+}
+.footer{
+    background-color: rgb(0, 138, 138);
+    grid-column: 1/-1;
 }
