@@ -47,7 +47,7 @@ a:hover{
     display: grid;
     background-color:deepskyblue;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 470px 450px;
+    grid-template-rows: 470px 450px 200px 200px ;
     grid-gap: 3px;
     
 }
@@ -58,13 +58,13 @@ a:hover{
 }
 .about{
     background-color: brown;
-    grid-column: 1/-1;
+    grid-column: 1/8;
 
     
 }
 .picture{
     background-color: blueviolet;
-    grid-column: 6/-1;
+    grid-column: 8/-1;
 
 }
 .trailer{
