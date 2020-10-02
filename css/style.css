@@ -57,15 +57,21 @@ a:hover{
     grid-column: 1/-1;
 }
 .about{
-    background-color: brown;
+    background-color: white;
     grid-column: 1/8;
 
     
 }
+
+
 .picture{
-    background-color: blueviolet;
+    background-color: black;
     grid-column: 8/-1;
 
+}
+.picture img{
+    width: 550px;
+    height: 450px;
 }
 .trailer{
     background-color: chartreuse;
