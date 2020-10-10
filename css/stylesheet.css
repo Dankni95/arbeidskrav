@@ -120,7 +120,7 @@ p {
 
 .slider_play_button {
 	position: absolute;
-	padding: 380px 150px 0px;
+	padding: 380px 100px 0px;
 	width: 20px;
 	margin: 10px;
 	border: none;
@@ -149,11 +149,11 @@ p {
 
 /*      play button placement and color */
 
-.slider_play_button button {
+.slider_play_button a {
 	position: relative;
 	width: 150px;
 	height: 40px;
-	margin: -65px;
+	right: 40px;
 	border-color: transparent;
 	background-color: transparent;
 	align-content: center;
@@ -161,16 +161,10 @@ p {
 		contrast(80%);
 }
 
-/*    Sound image in slider size */
 
-.slider_play_button img {
-	position: relative;
-	width: 80px;
-	height: 80px;
-}
 
 /* adds red color on hover for audio button */
-.slider_play_button button:hover {
+.slider_play_button a:hover {
 	filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
 		brightness(104%) contrast(97%);
 	cursor: pointer;
@@ -178,7 +172,7 @@ p {
 
 /* takes away outline border on:click */
 
-.slider_play_button button:focus {
+.slider_play_button a:focus {
 	outline: 0;
 }
 
@@ -194,11 +188,10 @@ audio {
 
 /* "deadpool logo" trying to take away outline border on:click  */
 
-.slider_main_button:focus,
-.main_button:focus {
+.dp_main_link:focus{
 	position: absolute;
 	border: none;
-	outline-style: none; /*  dette funker ikke?????? */
+	outline-style: none;
 	outline: 0;
 }
 
@@ -220,17 +213,17 @@ audio {
 
 /* Moving main button-logo */
 
-.button_main {
+.dp_main_link {
 	position: absolute;
 	text-align: center;
-	position: inherit;
-	right: 53%;
 }
 
 /* main "deadpool logo" button hiding bgcolor and border */
 
-.slider_main_button button {
+.slider_main_button  {
 	position: absolute;
+	text-align: center;
+	padding-right: 80px;
 	background-color: Transparent;
 	border-style: hidden;
 	cursor: pointer;

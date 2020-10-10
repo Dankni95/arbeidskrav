@@ -163,8 +163,12 @@ a:hover {
 	border: 1px solid red;
 	top: 450px;
 	left: 320px;
-	height: 35px;
+	height: 20px;
 	width: 150px;
+	padding: 7px;
+	text-align: center;
+	text-decoration: none;
+	
 
 	background-color: transparent;
 
@@ -175,9 +179,13 @@ a:hover {
 	z-index: 2;
 	top: 450px;
 	left: 520px;
-	height: 35px;
+	height: 20px;
 	width: 150px;
 	border: 1px solid red;
+	padding: 7px;
+	text-align: center;
+	text-decoration: none;
+
 	background-color: transparent;
 
 
@@ -313,22 +321,33 @@ a:hover {
 	color: transparent;
 
 }
+	/* button 3 habil edition v2 ;) */
 
-.about_text button{
+.about_text a{
 	position: relative;
-	left: 210px;
-	top: 10px;
-	z-index: 2;
-	border: 1px solid red;
-	height: 35px;
-	width: 170px;
-
-	background-color: transparent;
-}
-.about_text a {
+	
+	/* Position with absolute places the item within the body to the absolute desired destination. Relative positions a div relative to another "mother-div" */
+	left: 250px;
+	top: 20px;
+	/* Places the button under comic picture of deadpool // Daniel: moved the button to under text */ 
+	border: 2px solid red;
+	/* First variable, size of border, second is style, third is color */
+	background-color:rgb(63, 34, 34);
+	/* Amount of red, green and blue in the color. Found out by finding dominant color on the webpage with www.imagecolorpicker.com */
+	padding: 10px 30px 10px 30px;
+	/*Height of button, width of button // Daniel: added more padding for bigger button*/
+	font-size: medium;
+	color:white;
 	text-decoration: none;
-	color: #000000;
-	font-size: 15px;
+	font-family: fantasy;
+	/*matching other fonts from the webpage*/
+}
+
+.about_text a:hover{
+
+background-color: rgba(0, 0, 0, 0.2)
+/*changes color when hovering the button. Makes this so we can easily identify it as an responsive button. can read more about "Selectors" */
+
 }
 
 	/* gridpool 2 starting point */
@@ -365,4 +384,25 @@ a:hover {
 	width: 95%;
 
 
+}
+.bottom_footer {
+    display: grid;
+    justify-content: center;
+    /* centers the content */
+    padding: 25px;
+     /* absolute space of the footer */
+    background-color: black;
+     /* color of the footer, so that you can see the footer easily */
+    font-family: arial,
+        helvetica,
+        sans-serif;
+     /* Matching other fonts on the page. */
+    color: white;
+    /* Font color */
+    font-size: 15px;
+    grid-template-columns: repeat(2, 250px);
+    /* / "splits" the screen in four equal sized grids/ */
+    grid-template-rows: repeat(1, 50px);
+	 /* allows it to stay on the same row, and the size of the row */
+	 grid-gap: 40px; /* Daniel: added gridgap */
 }
